@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "000c1553-d5ae-4dfb-8680-bbc1e2031d06",
+		"name": "TesteFeign",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BuscaUsuario",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "header",
+						"value": "teste",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/usuario/daniel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"daniel"
+					],
+					"query": [
+						{
+							"key": "x-daniel",
+							"value": "teste",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuario",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "header",
+						"value": "teste",
+						"type": "text"
+					},
+					{
+						"key": "header2",
+						"value": "teste2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8085/usuario/nome/teste",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"usuario",
+						"nome",
+						"teste"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
